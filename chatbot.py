@@ -35,7 +35,7 @@ if __name__ == "__main__":
 
     assert src_len == tgt_len
 
-    batch_size = 32
+    batch_size = 1028
     n_step = src_len // batch_size
     src_vocab_size = len(metadata['idx2w']) # 8002 (0~8001)
     emb_dim = 1024
@@ -55,7 +55,7 @@ if __name__ == "__main__":
 
     src_vocab_size = tgt_vocab_size = src_vocab_size + 2
 
-    num_epochs = 50
+    num_epochs = 1
     vocabulary_size = src_vocab_size
     
 
